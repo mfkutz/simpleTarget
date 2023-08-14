@@ -1,0 +1,213 @@
+.container {
+    display: flex;
+}
+
+.img_container {
+    width: 282px;
+    background: url('../../assets/drawers.jpg');
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container_info {
+    background: #FFF;
+    width: 446px;
+    padding: 32px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 40px;
+}
+
+.text {
+    padding-top: 15px;
+}
+
+.avatar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.avatar_left {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.avatar_left h2 {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.avatar_left p {
+    color: var(--Grayish-Blue);
+    padding-top: 2px;
+}
+
+.icon_container {
+    background: var(--Light-Grayish-Blue);
+    padding: 8px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.icon_container_two {
+    background: var(--Desaturated-Dark-Blue);
+    padding: 8px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.avatar_right {
+
+    position: relative;
+}
+
+.share_text {
+    color: var(--Grayish-Blue);
+    letter-spacing: 6px;
+}
+
+.float {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    position: absolute;
+    top: -88px;
+    left: -114px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 34px;
+    border-radius: 10px;
+    gap: 12px;
+    box-shadow: 0px 2px 10px 1px rgba(128, 128, 128, 0.698);
+}
+
+.float::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -13px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+}
+
+.floatTwo {
+    display: none;
+}
+
+@media (max-width:874px) {
+    .float {
+        left: -190px;
+    }
+
+    .float::before {
+        transform: translate(205%);
+    }
+}
+
+@media (max-width:740px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .img_container {
+        width: 400px;
+        background: url('../../assets/drawers.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        height: 260px;
+    }
+
+    .container_info {
+        width: 400px;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    .float {
+        display: none;
+    }
+
+    .social_icons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .floatTwo {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--Very-Dark-Grayish-Blue);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 23px 40px;
+    }
+
+}
+
+@media (max-width:420px) {
+    .container {
+        padding: 0 24px;
+        position: relative;
+
+    }
+
+    .floatTwo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0 24px;
+        padding: 17px 32px;
+    }
+
+    .img_container {
+        width: 100%;
+        background-position: center 23%;
+        height: 200px;
+    }
+
+    .container_info {
+        width: 100%;
+        padding: 38px 32px;
+    }
+
+    .container_info h1 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .container_info p {
+        line-height: 20px;
+    }
+
+    .avatar_container {
+        padding-top: 40px;
+    }
+    .container_info{
+        padding-bottom: 14px;
+    }
+}
+
+.disabled {
+    display: none;
+}
