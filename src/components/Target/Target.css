@@ -1,6 +1,7 @@
 .container {
     display: flex;
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.11)
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
     
 }
 
@@ -171,6 +172,7 @@
     .container {
         padding: 0 24px;
         position: relative;
+        box-shadow: none;
 
     }
 
@@ -194,6 +196,7 @@
     .container_info {
         width: 100%;
         padding: 38px 32px;
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.11);
     }
 
     .container_info h1 {
@@ -211,6 +214,7 @@
     .container_info{
         padding-bottom: 14px;
     }
+    
 }
 
 .disabled {
